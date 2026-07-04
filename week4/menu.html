@@ -6,41 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        button {
-            background-color: rgb(249, 99, 46);
-            color: white;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 15px;
-        }
 
-        .bar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 30px;
-            gap: 50px
-        }
     </style>
 
 </head>
 
 <body>
-    <div class="bar">
-        <img src="image/elementra.png" alt="logo">
-        <div>Home</div>
-        <div>Services</div>
-        <div>Work</div>
-        <div>Project Details</div>
-        <div>Contact</div>
-        <div>
-            <img src="image/phone.png">
+    <div class="container">
+        <img src="image/elementra.png" alt="logo" height="60px">
+
+        <div class="bar">
+            <div>Home</div>
+            <div class="services">Services</div>
+            <div>Work</div>
+            <div>Project Details</div>
+            <div>Contact</div>
         </div>
-        <div>555-123-4587</div>
-        <div>
-            <img src="image/humburger.png">
+
+        <div class="right">
+            <div class="phone"><img src="image/phone.png" alt="phone" height="50px"></div>
+            <div class="number">555-123-4587</div>
+            <div class="hamburger"><img src="image/humburger.png" alt="hamburger" height="50px"></div>
+            <div><button>Contact</button></div>
         </div>
-        <button>Contact</button>
     </div>
 
 </body>
