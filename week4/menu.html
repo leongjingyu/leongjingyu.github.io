@@ -6,7 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
 
+        }
+
+        button {
+            background-color: rgb(249, 99, 46);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-right: 20px;
+            padding: 10px 15px;
+        }
+
+        .bar {
+            display: flex;
+            justify-content: center;
+            gap: 30px
+        }
+
+        .right {
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .number {
+            font-weight: bold;
+        }
+
+        .services {
+            color: rgb(249, 99, 46);
+        }
+
+        @media screen and (max-width: 1530px) {
+            .hamburger {
+                display: none;
+            }
+
+        }
+
+        @media screen and (max-width: 1100px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .bar {
+                display: none;
+            }
+
+            button {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+
+            .number {
+                display: none;
+            }
+
+            .phone {
+                display: none;
+            }
+
+            button {
+                display: none;
+            }
+
+            .bar {
+                display: none;
+            }
+
+
+
+        }
     </style>
 
 </head>
