@@ -5,6 +5,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+
+        body {
+            margin: 0px 100px;
+            font-family: "Space Grotesk", sans-serif;
+        }
+
+        button {
+            background-color: #191A23;
+            color: white;
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 20px;
+            border: none;
+            border-radius: 14px;
+            padding: 20px 35px;
+            margin-top: 33px;
+        }
+
+        .bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 50px;
+            margin-bottom: 70px;
+        }
+
+        .positivus {
+            max-width: 100px;
+            gap: 90px;
+        }
+
+        .about {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            line-height: 28px;
+            font-size: 15px;
+        }
+
+        .hamburger {
+            display: none;
+        }
+
+        .request {
+            padding: 10px 20px;
+            border: 1px solid #191A23;
+            border-radius: 5px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 50px;
+            margin-bottom: 65px;
+        }
+
+        .text {
+            display: flex;
+            align-items: left;
+            flex-direction: column;
+        }
+
+        .speaker {
+            display: none;
+        }
+
+        h1 {
+            font-size: 60px;
+            font-weight: 500;
+            max-width: 530px;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 400;
+            max-width: 500px;
+        }
+
+        .speaker2 {
+            display: flex;
+            justify-content: flex-end;
+            height: 100%;
+        }
+
+        .company {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 100%;
+            filter: grayscale(100%);
+            gap: 40px 13px;
+        }
+
+        .service-header {
+            display: flex;
+            align-items: center;
+            margin-top: 149px;
+            gap: 40px;
+        }
+
+        .service-header p {
+            font-size: 20px;
+            font-weight: 400;
+            max-width: 580px;
+        }
+
+        .service-header h2 {
+            background-color: #b9ff66;
+            border-radius: 5px;
+            border: none;
+            padding: 0px 10px;
+            font-size: 40px;
+            font-weight: 500;
+        }
+
+        .service-grids {
+            display: flex;
+            margin: 80px -20px;
+            flex-wrap: wrap;
+        }
+
+        .card-wrapper {
+            flex: 0 0 50%;
+            padding: 0px 20px;
+            margin-bottom: 40px;
+        }
+
+        .service-cards {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #191A23;
+            border-radius: 43px;
+            padding: 50px;
+            flex-direction: row;
+            height: 310px;
+            width: 100%;
+        }
+    </style>
+
 </head>
 
 
@@ -71,7 +215,7 @@
 
             <div class="card-wrapper">
                 <div class="service-cards card white">
-                    <div class="service=text">
+                    <div class="service-text">
                         <h3><span class="title" style="background-color:#B9FF66"></span>Search Engine</h3>
                         <h3><span class="title" style="background-color:#B9FF66">optimization</span></h3>
 
