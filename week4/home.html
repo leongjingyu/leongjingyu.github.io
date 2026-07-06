@@ -21,14 +21,14 @@
             border: none;
             border-radius: 14px;
             padding: 20px 35px;
-            margin-top: 33px;
+            margin-top: 35px;
         }
 
         .bar {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 50px;
+            margin-top: 51px;
             margin-bottom: 70px;
         }
 
@@ -43,7 +43,7 @@
             align-items: center;
             gap: 40px;
             line-height: 28px;
-            font-size: 15px;
+            font-size: 20px;
         }
 
         .hamburger {
@@ -51,9 +51,9 @@
         }
 
         .request {
-            padding: 10px 20px;
+            padding: 20px 35px;
             border: 1px solid #191A23;
-            border-radius: 5px;
+            border-radius: 14px;
         }
 
         .header {
@@ -61,7 +61,7 @@
             justify-content: space-between;
             align-items: flex-start;
             gap: 50px;
-            margin-bottom: 65px;
+            margin-bottom: 70px;
         }
 
         .text {
@@ -77,13 +77,13 @@
         h1 {
             font-size: 60px;
             font-weight: 500;
-            max-width: 530px;
+            max-width: 531px;
         }
 
         p {
             font-size: 20px;
             font-weight: 400;
-            max-width: 500px;
+            max-width: 498px;
         }
 
         .speaker2 {
@@ -99,7 +99,7 @@
             flex-wrap: wrap;
             height: 100%;
             filter: grayscale(100%);
-            gap: 40px 13px;
+            gap: 40px 15px;
         }
 
         .service-header {
@@ -110,13 +110,14 @@
         }
 
         .service-header p {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 400;
             max-width: 580px;
+            margin: 0px;
         }
 
         .service-header h2 {
-            background-color: #b9ff66;
+            background-color: #B9FF66;
             border-radius: 5px;
             border: none;
             padding: 0px 10px;
@@ -134,18 +135,250 @@
             flex: 0 0 50%;
             padding: 0px 20px;
             margin-bottom: 40px;
+            box-sizing: border-box;
         }
 
         .service-cards {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            box-shadow: 0px 5px 0px #191A23;
             border: 1px solid #191A23;
-            border-radius: 43px;
+            border-radius: 45px;
             padding: 50px;
             flex-direction: row;
             height: 310px;
             width: 100%;
+            box-sizing: border-box;
+        }
+
+        .card-black {
+            background-color: #191A23;
+        }
+
+        .card-white {
+            background-color: #f3f3f3;
+        }
+
+        .card-green {
+            background-color: #B9FF66;
+        }
+
+        .service-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            height: 100%;
+            width: 100%;
+        }
+
+        .service-cards h3 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            font-size: 30px;
+            font-weight: 500;
+            gap: 10px;
+            margin: 0px;
+        }
+
+        .learn-more {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 15px;
+            margin-top: auto;
+        }
+
+        .learn-more p {
+            font-size: 20px;
+            margin: 0px;
+        }
+
+        .learn-more img {
+            width: 41px;
+        }
+
+        .proposal {
+            background-color: #f3f3f3;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            border-radius: 43px;
+            padding-left: 60px;
+            height: 347px;
+        }
+
+        .service-card>img {
+            max-width: 50%;
+            height: auto;
+        }
+
+        .title {
+            border-radius: 5px;
+            padding: 3px 7px;
+        }
+
+        .arrow {
+            width: 41px;
+            height: 41px;
+        }
+
+        .proposal-text h3 {
+            font-size: 30px;
+            margin-top: 60px;
+        }
+
+        .proposal-text p {
+            font-size: 18px;
+        }
+
+        .proposal-text button {
+            margin-bottom: 60px;
+        }
+
+        .proposal2 {
+            display: none;
+        }
+
+        .proposal img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: visible;
+            height: 100%;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 1240px) {
+            .request {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+            body {
+                margin: 0px 50px;
+            }
+
+            .about {
+                display: none;
+            }
+
+            .header {
+                flex-direction: column;
+            }
+
+            .speaker2 {
+                display: none;
+            }
+
+            .speaker {
+                display: block;
+            }
+
+            .hamburger {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                max-width: 40%;
+            }
+
+            .company img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .card-wrapper {
+                flex: 0 0 100%;
+            }
+
+            .service-cards h3 {
+                font-size: 30px;
+            }
+
+            .service-text {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                height: 100%;
+            }
+
+            .service-cards {
+                height: 310px;
+                align-items: stretch;
+            }
+
+            .learn-more p {
+                display: none;
+            }
+
+            .learn-more img {
+                width: 100%;
+            }
+
+            .proposal-text {
+                margin: auto;
+            }
+
+            .proposal img {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            body {
+                margin: 0px 40px;
+            }
+
+            .bar {
+                margin: 0 40px;
+            }
+
+            .services-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .service-card {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                justify-content: space-between;
+                height: 280px;
+                width: 100%;
+                padding: 35px;
+            }
+
+            .service-cards h3 {
+                font-size: 24px;
+            }
+
+            .service-text {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                height: 100%;
+            }
+
+            .proposal-text {
+                flex-direction: column;
+                text-align: center;
+                padding-right: 60px;
+                margin: 0;
+            }
+
+            .proposal1 {
+                display: none;
+            }
+
+            .proposal2 {
+                display: flex;
+                margin-top: 20px;
+            }
+
         }
     </style>
 
@@ -202,7 +435,9 @@
 
         <div class="services">
             <div class="services-header">
-                <h2>Services</h2>
+                <div>
+                    <h2>Services</h2>
+                </div>
             </div>
 
             <div>
@@ -212,15 +447,14 @@
         </div>
 
         <div class="service-grids">
-
             <div class="card-wrapper">
-                <div class="service-cards card white">
+                <div class="service-cards card-white">
                     <div class="service-text">
-                        <h3><span class="title" style="background-color:#B9FF66"></span>Search Engine</h3>
+                        <h3><span class="title" style="background-color:#B9FF66">Search Engine</span></h3>
                         <h3><span class="title" style="background-color:#B9FF66">optimization</span></h3>
 
                         <div class="learn-more">
-                            <img src="image/arrow.png" alt="arrow">
+                            <img src="image/smallarrow.png" alt="smallarrow">
                             <p>Learn more</p>
                         </div>
                     </div>
@@ -230,26 +464,100 @@
             </div>
 
             <div class="card-wrapper">
-                <div class="service-cards card green">
+                <div class="service-cards card-green">
                     <div class="service-text">
                         <h3><span class="title" style="background-color: #ffffff;">Pay-per-click</span></h3>
                         <h3><span class="title" style="background-color: #ffffff;">advertising</span></h3>
 
                         <div class="learn-more">
-                            <img src="image/arrow.png" alt="arrow">
+                            <img src="image/smallarrow.png" alt="smallarrow">
                             <p>Learn more</p>
                         </div>
                     </div>
 
                     <img src="image/payperclick.png" alt="pay per click image">
-
                 </div>
             </div>
 
+            <div class="card-wrapper">
+                <div class="service-cards card-black">
+                    <div class="service-text">
+                        <h3><span class="title" style="background-color: #ffffff;">Social Media</span></h3>
+                        <h3><span class="title" style="background-color: #ffffff;">Marketing</span></h3>
+
+                        <div class="learn-more">
+                            <img src="image/whitearrow.png" alt="whitearrow image">
+                            <p><span style="color: #ffffff;">Learn more</span></p>
+                        </div>
+                    </div>
+
+                    <img src="image/socialmedia.png" alt="social media marketing image">
+                </div>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="service-cards card-white">
+                    <div class="service-text">
+                        <h3><span class="title" style="background-color: #B9FF66;">E-mail</span></h3>
+                        <h3><span class="title" style="background-color: #B9FF66;">Marketing</span></h3>
+
+                        <div class="learn-more">
+                            <img src="image/smallarrow.png" alt="smallarrow image">
+                            <p>Learn more</p>
+                        </div>
+                    </div>
+
+                    <img src="image/email.png" alt="email marketing image">
+                </div>
+
+                <div class="card-wrapper">
+                    <div class="service-cards card-green">
+                        <div class="service-text">
+                            <h3><span class="title" style="background-color: #ffffff;">Content</span></h3>
+                            <h3><span class="title" style="background-color: #ffffff;">Creation</span></h3>
+
+                            <div class="learn-more">
+                                <img src="image/smallarrow.png" alt="smallarrow image">
+                                <p>Learn more</p>
+                            </div>
+                        </div>
+
+                        <img src="image/content.png" alt="content creation image">
+                    </div>
+                </div>
+
+                <div class="card-wrapper">
+                    <div class="service-cards card-black">
+                        <div class="service-text">
+                            <h3><span class="title" style="background-color: #b9ff66;">Analytics</span></h3>
+                            <h3><span class="title" style="background-color: #b9ff66;">Tracking</span></h3>
+
+                            <div class="learn-more">
+                                <img src="image/whitearrow.png" alt="whitearrow image">
+                                <p><span style="color: #ffffff;">Learn more</span></p>
+                            </div>
+                        </div>
+
+                        <img src="image/analytics.png" alt="analytics and tracking image">
+                    </div>
+                </div>
+            </div>
         </div>
 
+        <div class="proposal">
+            <div class="proposal-text">
+                <h3>Let's make things happen</h3>
+                <p>Contact us today to learn more about how our digital marketing services can help your business grow
+                    and
+                    succeed online.</p>
+                <button class="proposal1">Get your free proposal</button>
+                <button class="proposal2">Get your proposal</button>
+            </div>
+            <div>
+                <img src="image/proposal.png" alt="free proposal image">
+            </div>
+        </div>
     </div>
-
 
 
 </body>
