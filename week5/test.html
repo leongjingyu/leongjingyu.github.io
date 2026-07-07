@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .main div {
+            width: calc(100% / 4) - calc(30px / 4);
+            /*4 boxes per row, and it contains 3 gaps space(total 10+10+10=30px), so 30px/4 = 7.5px per div*/
+            height: 50px;
+            border: 1px solid black;
+            padding: 30px;
+        }
+
+        @media(max-width: 400px) {
+            .main div {
+                width: calc(100% / 2);
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="main">
+        <div style="background-color: aqua;">A</div>
+        <div style="background-color: lightcoral;">B</div>
+        <div style="background-color: lightgreen;">C</div>
+        <div style="background-color: aqua;">A</div>
+        <div style="background-color: lightcoral;">B</div>
+        <div style="background-color: lightgreen;">C</div>
+        <div style="background-color: aqua;">A</div>
+        <div style="background-color: lightcoral;">B</div>
+        <div style="background-color: lightgreen;">C</div>
+        <div style="background-color: aqua;">A</div>
+        <div style="background-color: lightcoral;">B</div>
+        <div style="background-color: lightgreen;">C</div>
+        <div style="background-color: aqua;">A</div>
+        <div style="background-color: lightcoral;">B</div>
+        <div style="background-color: lightgreen;">C</div>
+    </div>
+</body>
+
+</html>
