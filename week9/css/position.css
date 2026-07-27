@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1717b8;
+}
+
+.profile-image {
+    width: 60%;
+    border-radius: 10px;
+    position: absolute;
+    left: 150px;
+
+}
+
+.profile-card {
+    width: 60%;
+    margin: 50px auto;
+    position: relative;
+}
+
+.revenue-box {
+    width: 24%;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50px;
+    right: 60px;
+}
+
+.revenue-number {
+    font-size: 25px;
+    font-weight: bold;
+    color: #333;
+}
+
+.revenue-arrow {
+    background-color: #ccff00;
+    font-size: 10px;
+    display: inline-block;
+    line-height: 15px;
+    text-align: center;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+.revenue-line {
+    background-color: #ccff00;
+    width: 100%;
+    height: 3px;
+    margin: 8px 0;
+}
+
+.revenue-text {
+    color: #555;
+    font-size: 12px;
+}
+
+.experience-box {
+    background-color: #ccff00;
+    border-radius: 10px;
+    position: absolute;
+    left: 80px;
+    top: 450px;
+    width: 30%;
+    padding: 28px;
+}
+
+.experience-text {
+    font-size: 12px;
+    color: black;
+}
+
+.experience-number {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.experience-line {
+    background-color: black;
+    width: 60%;
+    height: 2px;
+    margin: 8px 0;
+}
+
+
+@media (max-width:1200px) {
+
+    .profile-image {
+        width: 70%;
+        top: 15px;
+        left: 100px;
+    }
+
+    .revenue-box {
+        width: 28%;
+        top: 40px;
+        right: 15px;
+    }
+
+    .experience-box {
+        background-color: #ccff00;
+        width: 25%;
+        padding: 30px;
+        border-radius: 8px;
+        position: absolute;
+        left: 15px;
+        top: 400px;
+    }
+
+}
+
+@media (max-width:500px) {
+
+    .profile-image {
+        width: 100%;
+        top: 15px;
+        left: 30px;
+        border-radius: 0px;
+    }
+
+    .revenue-box {
+        width: 45%;
+        padding: 25px;
+        border-radius: 8px;
+        position: absolute;
+        top: 40px;
+        left: 250px;
+    }
+
+    .experience-box {
+        background-color: #ccff00;
+        width: 70%;
+        padding: 30px;
+        border-radius: 8px;
+        position: absolute;
+        left: 1px;
+        top: 200px;
+    }
+
+    .revenue-number {
+        font-size: 18px;
+    }
+
+    .experience-number {
+        font-size: 30px;
+    }
+
+    .revenue-text {
+        font-size: 9px;
+    }
+
+    .experience-text {
+        font-size: 9px;
+    }
+
+}
