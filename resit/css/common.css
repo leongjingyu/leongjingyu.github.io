@@ -1,0 +1,37 @@
+:root {
+    --background: #fbfcee;
+    --title: #140503;
+    --text: #82878e;
+    --font: 'Tenor Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    background: var(--background);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 88px;
+}
+
+.header-logo {
+    font-size: 38px;
+    letter-spacing: 0.01em;
+    color: var(--title);
+}
+
+.menu-bar {
+    display: flex;
+    gap: 38px;
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+.menu-bar a {
+    font-size: 17px;
+    letter-spacing: 0.12em;
+    color: var(--text);
+}
