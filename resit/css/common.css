@@ -1,5 +1,6 @@
 :root {
     --background: #fbfcee;
+    --footer-text: #F6F7F8;
     --title: #140503;
     --text: #82878e;
     --font: 'Tenor Sans', sans-serif;
@@ -35,4 +36,11 @@ body {
     letter-spacing: 0.12em;
     padding: 0px 15px;
     color: var(--title);
+}
+
+.site-footer {
+    background: #472425;
+    color: var(--footer-text);
+    padding-top: 120px;
+    overflow: hidden;
 }
