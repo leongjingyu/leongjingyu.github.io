@@ -38,9 +38,61 @@ body {
     color: var(--title);
 }
 
-.site-footer {
+.footer {
     background: #472425;
     color: var(--footer-text);
     padding-top: 120px;
-    overflow: hidden;
+    padding-bottom: 60px;
+}
+
+.footer a {
+    color: var(--footer-text);
+    text-decoration: none;
+}
+
+.footer-inner {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 0 88px;
+}
+
+.footer-left .logo {
+    font-size: 38px;
+    line-height: 1;
+    color: var(--footer-text);
+}
+
+.footer-left p {
+    max-width: 480px;
+    margin-top: 36px;
+    font-size: 15px;
+}
+
+.footer-right h4 {
+    font-weight: 400;
+    margin: 0 0 36px;
+    font-size: 19px;
+    line-height: 1.2;
+}
+
+.footer-right a {
+    color: var(--footer-text);
+    font-size: 16px;
+    padding: 0px 0px 9.5px;
+    margin: 9.5px 0px;
+}
+
+.footer-right .email,
+.footer-right .phone {
+    margin-top: 44px;
+}
+
+.footer-watermark {
+    margin-top: 100px;
+    padding: 0 88px;
+    font-size: 93px;
+    opacity: 0.2;
+    color: var(--footer-text);
+
 }
