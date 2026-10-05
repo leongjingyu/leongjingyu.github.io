@@ -41,8 +41,7 @@ body {
 .footer {
     background: #472425;
     color: var(--footer-text);
-    padding-top: 120px;
-    padding-bottom: 60px;
+    padding: 100px 0 0;
 }
 
 .footer a {
@@ -51,10 +50,19 @@ body {
 }
 
 .footer-inner {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 40px;
+    display: flex;
     padding: 0 88px;
+    box-sizing: border-box;
+}
+
+.footer-left {
+    width: calc(100% / 5 * 2);
+}
+
+.footer-right {
+    width: calc(100% / 5);
+    margin-bottom: 24px;
+    line-height: 1.5;
 }
 
 .footer-left .logo {
@@ -66,6 +74,7 @@ body {
 .footer-left p {
     max-width: 480px;
     margin-top: 36px;
+    line-height: 1.8;
     font-size: 15px;
 }
 
@@ -86,6 +95,10 @@ body {
 .footer-right .email,
 .footer-right .phone {
     margin-top: 44px;
+}
+
+.footer-right .address {
+    line-height: 1.8;
 }
 
 .footer-watermark {
