@@ -74,3 +74,38 @@
     color: var(--title);
     text-decoration: none;
 }
+
+.faq {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    padding: 120px 110px;
+    background: var(--white);
+}
+
+.faq-label {
+    font-family: var(--font-heading);
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    margin: 0 0 10px;
+    color: var(--title);
+}
+
+.faq-title {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    margin: 0 0 40px;
+    color: var(--title);
+}
+
+.faq-desc {
+    font-size: 15px;
+    font-family: var(--font-text);
+    line-height: 1.8;
+    color: var(--text-grey);
+    max-width: 620px;
+    margin: 0;
+}
