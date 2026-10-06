@@ -6,6 +6,9 @@
     --font-text: Kumbh Sans, sans-serif;
     --footer-background: #472425;
     --background-cream: #fbfcee;
+    --background-blue: #bbbade;
+    --background-purple: #d6d6ff;
+    --background-grey: #f4f4f2;
     --footer-text: #F6F7F8;
     --title: #140503;
     --text-grey: #82878e;
@@ -24,6 +27,12 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 40px 88px;
+}
+
+.logo img {
+    height: auto;
+    width: auto;
+    display: block;
 }
 
 .menu-bar {
