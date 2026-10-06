@@ -1,15 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Tenor+Sans&display=swap');
+
 :root {
-    --background: #fbfcee;
+    --font-heading: Tenor Sans, sans-serif;
+    --font-text: Kumbh Sans, sans-serif;
+    --footer-background: #472425;
+    --background-cream: #fbfcee;
     --footer-text: #F6F7F8;
     --title: #140503;
-    --text: #82878e;
-    --card-background: #ffffff;
-    --font: 'Tenor Sans', sans-serif;
+    --text-grey: #82878e;
+    --white: #ffffff;
+    --black: #000000;
+
 }
 
 body {
     margin: 0;
-    background: var(--background);
+    background: var(--background-cream);
 }
 
 .header {
@@ -19,13 +26,8 @@ body {
     padding: 40px 88px;
 }
 
-.header-logo {
-    font-size: 16px;
-    letter-spacing: 0.01em;
-    color: var(--title);
-}
-
 .menu-bar {
+    font-family: var(--font-heading);
     display: flex;
     gap: 38px;
     margin-left: auto;
@@ -37,10 +39,11 @@ body {
     letter-spacing: 0.12em;
     padding: 0px 15px;
     color: var(--title);
+    text-decoration: none;
 }
 
 .footer {
-    background: #472425;
+    background: var(--footer-background);
     color: var(--footer-text);
     padding: 100px 0 0;
 }
@@ -76,7 +79,8 @@ body {
     max-width: 480px;
     margin-top: 36px;
     line-height: 1.8;
-    font-size: 15px;
+    font-size: 16px;
+    font-family: var(--font-text);
 }
 
 .footer-right h4 {
@@ -84,10 +88,12 @@ body {
     margin: 0 0 36px;
     font-size: 19px;
     line-height: 1.2;
+    font-family: var(--font-heading);
 }
 
 .footer-right a {
     color: var(--footer-text);
+    font-family: var(--font-text);
     font-size: 16px;
     padding: 0px 0px 9.5px;
     margin: 9.5px 0px;
@@ -96,10 +102,13 @@ body {
 .footer-right .email,
 .footer-right .phone {
     margin-top: 44px;
+    font-size: 16px;
 }
 
 .footer-right .address {
     line-height: 1.8;
+    font-size: 16px;
+    font-family: var(--font-text);
 }
 
 .footer-watermark {

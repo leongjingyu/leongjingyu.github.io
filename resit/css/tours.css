@@ -1,5 +1,5 @@
 .tours {
-    background: var(--background);
+    background: var(--background-cream);
     padding: 80px 144px;
 }
 
@@ -9,7 +9,8 @@
 }
 
 .tours-title {
-    font-size: 13px;
+    font-size: 14px;
+    font-family: var(--font-heading);
     color: var(--title);
     margin: 0 0 10px;
 }
@@ -22,7 +23,7 @@
 
 .tours-desc {
     font-size: 15px;
-    color: var(--text);
+    color: var(--text-grey);
 }
 
 .tour-card {
@@ -46,7 +47,7 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    background: var(--card-background);
+    background: var(--white);
     padding: 50px;
 }
 
@@ -60,7 +61,7 @@
 
 .tour-info p {
     font-size: 14px;
-    color: var(--text);
+    color: var(--text-grey);
     margin: 40px 0 0;
     line-height: 1.8;
 }
