@@ -1,0 +1,38 @@
+.contact {
+    padding: 0 90px;
+}
+
+.contact h2 {
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    margin-bottom: 60px;
+}
+
+.grid h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text-grey);
+    margin-bottom: 18px;
+}
+
+.grid p,
+.grid a {
+    display: block;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--title);
+    text-decoration: none;
+}
+
+.contact-us {
+    padding: 170px 90px 120px;
+    font-size: 36px;
+    line-height: 1.0;
+    letter-spacing: 0.03em;
+    max-width: 1500px;
+}
+
+.contact-us span {
+    color: var(--email-grey);
+}
