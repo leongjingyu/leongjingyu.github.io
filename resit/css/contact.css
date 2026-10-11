@@ -58,10 +58,3 @@
     height: 500px;
     object-fit: cover;
 }
-
-.line {
-    position: relative;
-    height: 1px;
-    background: var(--title);
-    margin: 170px 70px 0;
-}

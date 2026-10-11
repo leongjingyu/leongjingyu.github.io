@@ -129,3 +129,10 @@ body {
     color: var(--footer-text);
 
 }
+
+.line {
+    position: relative;
+    height: 1px;
+    background: var(--title);
+    margin: 170px 70px 0;
+}
