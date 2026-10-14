@@ -80,10 +80,15 @@
     text-decoration: none;
 }
 
+.faq-left,
+.faq-question {
+    flex: 1;
+}
+
 .faq {
     display: flex;
     align-items: flex-start;
-    gap: 70px;
+    gap: 66px;
     padding: 120px 110px;
     background: var(--white);
 }
@@ -116,11 +121,15 @@
 }
 
 .faq-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid var(--text-grey);
     padding: 20px 0;
 }
 
 .faq-item h4 {
+    margin: 0;
     font-family: var(--font-heading);
     font-size: 19px;
     font-weight: 400;
