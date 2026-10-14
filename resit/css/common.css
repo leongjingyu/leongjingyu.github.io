@@ -31,7 +31,7 @@ body {
 }
 
 .logo img {
-    height: auto;
+    height: 25px;
     width: auto;
     display: block;
 }
@@ -40,16 +40,20 @@ body {
     font-family: var(--font-heading);
     display: flex;
     gap: 38px;
-    margin-left: auto;
-    margin-right: 40px;
+    align-items: center;
 }
 
 .menu-bar a {
     font-size: 14px;
     letter-spacing: 0.12em;
-    padding: 0px 15px;
     color: var(--title);
     text-decoration: none;
+}
+
+.menu-bar img {
+    width: 22px;
+    height: 22px;
+    display: block;
 }
 
 .footer {
@@ -61,6 +65,7 @@ body {
 .footer a {
     color: var(--footer-text);
     text-decoration: none;
+    overflow: hidden;
 }
 
 .footer-inner {
@@ -71,12 +76,6 @@ body {
 
 .footer-left {
     width: calc(100% / 5 * 2);
-}
-
-.footer-right {
-    width: calc(100% / 5);
-    margin-bottom: 24px;
-    line-height: 1.5;
 }
 
 .footer-left .logo {
@@ -93,6 +92,22 @@ body {
     font-family: var(--font-text);
 }
 
+.footer-right {
+    width: calc(100% / 5 * 3);
+    display: flex;
+    margin-bottom: 24px;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: var(--font-text);
+}
+
+.footer-grid {
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 .footer-right h4 {
     font-weight: 400;
     margin: 0 0 36px;
@@ -104,29 +119,16 @@ body {
 .footer-right a {
     color: var(--footer-text);
     font-family: var(--font-text);
-    font-size: 16px;
-    padding: 0px 0px 9.5px;
-    margin: 9.5px 0px;
-}
-
-.footer-right .email,
-.footer-right .phone {
-    margin-top: 44px;
-    font-size: 16px;
-}
-
-.footer-right .address {
-    line-height: 1.8;
-    font-size: 16px;
-    font-family: var(--font-text);
 }
 
 .footer-watermark {
     margin-top: 100px;
-    padding: 0 88px;
-    font-size: 93px;
-    opacity: 0.2;
+    padding: 0 30px;
+    font-size: 228px;
+    opacity: 0.08;
+    font-family: var(--font-heading);
     color: var(--footer-text);
+    font-weight: 400;
 
 }
 
