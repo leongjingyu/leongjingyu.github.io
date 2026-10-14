@@ -13,17 +13,21 @@
     font-family: var(--font-heading);
     color: var(--title);
     margin: 0 0 10px;
+    font-weight: 200;
 }
 
 .tours-header h2 {
     margin: 0 0 30px;
-    font-size: 30px;
+    font-size: 57px;
     color: var(--title);
+    font-family: var(--font-heading);
+    font-weight: 400;
 }
 
 .tours-desc {
-    font-size: 15px;
+    font-size: 16px;
     color: var(--text-grey);
+    font-family: var(--font-text);
 }
 
 .tour-card {
@@ -33,7 +37,7 @@
 }
 
 .tour-img {
-    flex: 2;
+    flex: 3;
 }
 
 .tour-img img {
@@ -53,7 +57,8 @@
 
 .tour-info h3 {
     margin: 0 0 10px;
-    font-size: 30px;
+    font-size: 23px;
+    font-family: var(--font-heading);
     font-weight: 400;
     letter-spacing: 0.05em;
     color: var(--title);
@@ -62,22 +67,22 @@
 .tour-info p {
     font-size: 14px;
     color: var(--text-grey);
-    margin: 40px 0 0;
-    line-height: 1.8;
+    font-family: var(--font-text);
 }
 
 .explore {
     margin-top: auto;
     align-self: flex-start;
-    font-size: 13px;
+    font-family: var(--font-text);
+    font-size: 14px;
     letter-spacing: 0.05em;
     color: var(--title);
     text-decoration: none;
 }
 
 .faq {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    align-items: flex-start;
     gap: 70px;
     padding: 120px 110px;
     background: var(--white);
@@ -85,7 +90,7 @@
 
 .faq-label {
     font-family: var(--font-heading);
-    font-size: 13px;
+    font-size: 14px;
     letter-spacing: 0.1em;
     margin: 0 0 10px;
     color: var(--title);
@@ -94,7 +99,7 @@
 .faq-title {
     font-family: var(--font-heading);
     font-weight: 400;
-    font-size: 30px;
+    font-size: 57px;
     line-height: 1;
     letter-spacing: 0.04em;
     margin: 0 0 40px;
@@ -102,10 +107,25 @@
 }
 
 .faq-desc {
-    font-size: 15px;
+    font-size: 16px;
     font-family: var(--font-text);
     line-height: 1.8;
     color: var(--text-grey);
     max-width: 620px;
     margin: 0;
+}
+
+.faq-item {
+    border-bottom: 1px solid var(--text-grey);
+    padding: 20px 0;
+}
+
+.faq-item h4 {
+    font-family: var(--font-heading);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title);
 }
