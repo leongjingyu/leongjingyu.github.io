@@ -13,15 +13,14 @@
 <body>
 
     <div class="header">
+        <input type="checkbox" id="menu-check" hidden>
 
-        <a href="index.html" class="logo"><img src="image/logo1.png" alt="Logo"></a>
+        <a href="index.html" class="logo"><img src="image/logo1.png" alt="Logo" width="100%"></a>
 
         <div class="menu-bar">
             <div><a href="index.html">HOME</a></div>
             <div><a href="about.html">ABOUT</a></div>
             <div><a href="tours.html">TOURS</a></div>
-            <div>TOUR DETAILS</div>
-            <div>BLOG</div>
             <div><a href="contact.html">CONTACT</a></div>
 
             <div class="header-icon">
@@ -31,7 +30,17 @@
             </div>
         </div>
 
-        <div class="menu-toggle">&#9776;</div>
+        <label for="menu-check" class="menu-toggle">&#9776;</label>
+
+        <div class="overlay-menu" id="overlay-menu">
+            <label for="menu-check" class="close-btn" aria-label="Close menu">×</label>
+            <div class="overlay-menu-text">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="tours.html">TOURS</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+        </div>
     </div>
 
     <div class="contact-image">
@@ -78,8 +87,8 @@
             <div class="footer-left">
                 <a href="index.html" class="logo"><img src="image/logo2.webp" alt="Logo"></a>
 
-                <p>At Elementra, we believe in the power of creativity<br>
-                    and collaboration to drive success. Our dedicated<br>
+                <p>At Elementra, we believe in the power of creativity
+                    and collaboration to drive success. Our dedicated
                     team is here to help you.</p>
             </div>
 

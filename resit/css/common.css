@@ -9,6 +9,7 @@
     --background-blue: #bbbade;
     --background-purple: #d6d6ff;
     --background-grey: #f4f4f2;
+    --submenu-background: #2a1617;
     --footer-text: #F6F7F8;
     --title: #140503;
     --text-grey: #82878e;
@@ -71,6 +72,47 @@ body {
     display: none;
 }
 
+.overlay-menu {
+    display: none;
+}
+
+#menu-check:checked~.overlay-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    inset: 0;
+    padding: 0 54px;
+    background: var(--submenu-background);
+    z-index: 9999;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 48px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.overlay-menu-text {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.overlay-menu-text a {
+    font-family: var(--font-heading);
+    font-size: 23px;
+    color: var(--footer-text);
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
 .footer {
     background: var(--footer-background);
     color: var(--footer-text);
@@ -85,12 +127,13 @@ body {
 
 .footer-inner {
     display: flex;
+    gap: 60px;
     padding: 0 88px;
     box-sizing: border-box;
 }
 
 .footer-left {
-    width: calc(100% / 5 * 2);
+    flex: 2;
 }
 
 .footer-left .logo {
@@ -108,8 +151,9 @@ body {
 }
 
 .footer-right {
-    width: calc(100% / 5 * 3);
+    flex: 3;
     display: flex;
+    gap: 40px;
     margin-bottom: 24px;
     line-height: 1.5;
     font-size: 16px;
@@ -120,20 +164,20 @@ body {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    min-width: 150px;
 }
 
 .footer-right>.footer-grid {
-    width: calc(100% / 3);
+    flex: 1.5;
 }
 
 .footer-contact {
-    width: calc(100% / 3 * 2);
+    flex: 2;
     display: flex;
+    gap: 40px;
 }
 
 .footer-contact .footer-grid {
-    width: 50%;
+    flex: 1;
 }
 
 .footer-right h4 {
@@ -211,7 +255,21 @@ body {
     }
 
     .menu-toggle {
-        display: flex;
+        display: block;
+        background: none;
+        border: none;
+    }
+
+    .menu-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: var(--white);
+    }
+
+    .menu-bar a {
+        color: var(--white);
+        font-size: 23px;
     }
 
     .logo img {
