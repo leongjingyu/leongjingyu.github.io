@@ -1,5 +1,5 @@
 .contact {
-    padding: 0 90px;
+    padding: 60px 115px 0;
     font-family: var(--font-heading);
 }
 
@@ -7,25 +7,27 @@
     font-size: 47px;
     font-weight: 400;
     letter-spacing: 0.04em;
-    margin-bottom: 60px;
+    margin: 0 0 70px;
 }
 
 .grid h3 {
     font-size: 19px;
     font-weight: 400;
     color: var(--text-grey);
-    margin-bottom: 18px;
+    margin: 0 0 14px;
+    letter-spacing: 0.04em;
 }
 
 .grid {
     display: flex;
-    gap: 40px;
+    gap: 80px;
 }
 
 .grid p,
 .grid a {
     display: block;
-    font-size: 16px;
+    margin: 0;
+    font-size: 19px;
     line-height: 1.25;
     color: var(--title);
     text-decoration: none;
