@@ -1,3 +1,8 @@
+.line {
+    width: auto;
+    margin: 0 12px 0;
+}
+
 .tours {
     background: var(--background-cream);
     padding: 80px 144px;
@@ -137,4 +142,56 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title);
+}
+
+@media (max-width: 766px) {
+
+    .tours {
+        padding: 50px 20px;
+    }
+
+    .tours-header {
+        margin-bottom: 40px;
+    }
+
+    .tours-title {
+        font-size: 13px;
+        letter-spacing: 0.1em;
+    }
+
+    .tours-header h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .tours-desc {
+        font-size: 15px;
+    }
+
+    .tour-card {
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 30px;
+    }
+
+    .tour-img {
+        flex: none;
+    }
+
+    .tour-img img {
+        height: auto;
+    }
+
+    .tour-info {
+        flex: none;
+        padding: 30px 20px;
+    }
+
+    .tour-info h3 {
+        font-size: 20px;
+    }
+
+    .explore {
+        margin-top: 20px;
+    }
 }
