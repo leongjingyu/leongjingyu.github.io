@@ -13,7 +13,6 @@
 <body>
 
     <div class="header">
-        <input type="checkbox" id="menu-check" hidden>
 
         <a href="index.html" class="logo"><img src="image/logo1.png" alt="Logo" width="100%"></a>
 
@@ -30,16 +29,16 @@
             </div>
         </div>
 
-        <label for="menu-check" class="menu-toggle">&#9776;</label>
+        <button class="menu-toggle" id="menu-open" aria-label="Open menu" aria-expanded="false">&#9776;</button>
 
-        <div class="overlay-menu" id="overlay-menu">
-            <label for="menu-check" class="close-btn" aria-label="Close menu">×</label>
-            <div class="overlay-menu-text">
+        <div class="overlay-menu" id="overlay-menu" aria-hidden="true">
+            <button class="close-btn" id="menu-close" aria-label="Close menu">×</button>
+            <nav class="overlay-menu-text">
                 <a href="index.html">HOME</a>
                 <a href="about.html">ABOUT</a>
                 <a href="tours.html">TOURS</a>
                 <a href="contact.html">CONTACT</a>
-            </div>
+            </nav>
         </div>
     </div>
 
@@ -133,6 +132,9 @@
 
         <div class="footer-watermark">ELEMENTRA</div>
     </div>
+
+    <script src="js/menu.js" defer></script>
+
 </body>
 
 </html>
