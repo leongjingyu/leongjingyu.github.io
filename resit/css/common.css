@@ -17,6 +17,7 @@
     --white: #ffffff;
     --black: #000000;
     --orange: #ed9266;
+    --border: #e7e7d9;
 
 }
 
@@ -236,6 +237,20 @@ body.menu-locked {
     height: 1px;
     background: var(--title);
     margin: 170px 70px 0;
+}
+
+.banner-button {
+    display: inline-block;
+    padding: 22px 55px;
+    background: var(--orange);
+    color: var(--background-cream);
+    font-family: var(--font-heading);
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all .3s ease;
 }
 
 @media (max-width: 1281px) {

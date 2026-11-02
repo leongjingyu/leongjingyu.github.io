@@ -178,20 +178,6 @@
     letter-spacing: 1px;
 }
 
-.banner-button {
-    display: inline-block;
-    padding: 22px 55px;
-    background: var(--orange);
-    color: var(--background-cream);
-    font-family: var(--font-heading);
-    font-size: 13px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-radius: 50px;
-    transition: all .3s ease;
-}
-
 @media (max-width: 970px) {
     .tours {
         padding: 50px 20px;
