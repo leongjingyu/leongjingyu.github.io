@@ -152,7 +152,7 @@
 .content-title {
     font-family: var(--font-heading);
     font-weight: 400;
-    font-size: 57px;
+    font-size: clamp(36px, 5vw, 57px);
     line-height: 1.05;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -164,9 +164,9 @@
 .review {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 38px;
+    gap: clamp(12px, 2vw, 38px);
     align-items: start;
-    padding: 60px 75px 0;
+    padding: 60px clamp(20px, 5vw, 75px) 0;
     background: var(--background-cream);
 }
 
@@ -174,15 +174,16 @@
     background: var(--white);
     border: 1px solid var(--border);
     padding: 52px 38px 50px;
+    min-width: 0;
 }
 
 .stars {
     --rating: 5;
     display: inline-block;
-    font-size: 22px;
+    font-size: clamp(14px, 1.6vw, 22px);
     line-height: 1;
     letter-spacing: 0.05em;
-    margin-bottom: 44px;
+    margin-bottom: clamp(20px, 3vw, 44px);
     background: linear-gradient(90deg, var(--orange) calc(var(--rating) / 5 * 100%), #ddd 0);
     -webkit-background-clip: text;
     background-clip: text;
@@ -195,18 +196,19 @@
 
 .comment {
     font-family: var(--font-heading);
-    font-size: 19px;
+    font-size: clamp(15px, 1.5vw, 19px);
     line-height: 1.2;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--title);
     margin: 0 0 56px;
+    overflow-wrap: break-word;
 }
 
 .author {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: clamp(8px, 1.4vw, 20px);
 }
 
 .author img {
@@ -219,7 +221,7 @@
 
 .name {
     font-family: var(--font-heading);
-    font-size: 19px;
+    font-size: clamp(11px, 1.3vw, 19px);
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--title);
@@ -227,7 +229,7 @@
 
 .role {
     font-family: var(--font-text);
-    font-size: 15px;
+    font-size: clamp(11px, 1.1vw, 15px);
     color: var(--email-grey);
     margin-top: 4px;
 }
@@ -264,7 +266,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
-    padding: 80px 135px 0;
+    padding: 80px 80px 0;
     align-items: start;
     background-color: var(--white);
 }
@@ -405,44 +407,7 @@
         width: 60%;
         padding-top: 20px;
     }
-}
 
-@media (max-width: 1340px) {
-    .review {
-        gap: 24px;
-        padding: 60px 40px 0;
-    }
-
-    .review-card {
-        padding: 40px 24px;
-    }
-
-    .stars {
-        font-size: 20px;
-        margin-bottom: 32px;
-    }
-
-    .comment {
-        font-size: 19px;
-        margin: 0 0 40px;
-    }
-
-    .author {
-        gap: 16px;
-    }
-
-    .author img {
-        width: 70px;
-        height: 70px;
-    }
-
-    .name {
-        font-size: 15px;
-    }
-
-}
-
-@media (max-width: 1281px) {
     .brand {
         grid-template-columns: repeat(3, minmax(0, 1fr));
         height: auto;
@@ -461,4 +426,69 @@
         width: 60%;
         max-width: 230px;
     }
+}
+
+@media (max-width: 1030px) {
+    .review {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 38px;
+        padding: 60px 30px 0;
+    }
+
+    .review-card {
+        padding: 52px 38px 50px;
+    }
+
+    .stars {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    .comment {
+        font-size: 19px;
+        line-height: 1.35;
+        margin-bottom: 44px;
+    }
+
+    .author {
+        gap: 20px;
+    }
+
+    .author img {
+        width: 68px;
+        height: 68px;
+    }
+
+    .name {
+        font-size: 19px;
+    }
+
+    .role {
+        font-size: 15px;
+    }
+
+    .desc-title {
+        gap: 40px;
+        padding: 80px 28px 0;
+    }
+
+    .desc-title h2 {
+        font-size: 45px;
+        line-height: 1.05;
+        max-width: 450px;
+    }
+
+    .desc-text {
+        padding-top: 20px;
+    }
+
+    .gallery {
+        gap: 37px;
+        padding: 70px 28px 60px;
+    }
+
+    .gallery .short {
+        margin-top: 52px;
+    }
+
 }
