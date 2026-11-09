@@ -6,14 +6,13 @@
     --font-text: Kumbh Sans, sans-serif;
     --footer-background: #472425;
     --background-cream: #fbfcee;
-    --background-blue: #bbbade;
-    --background-purple: #d6d6ff;
-    --background-grey: #f4f4f2;
     --submenu-background: #2a1617;
     --footer-text: #F6F7F8;
     --title: #140503;
     --text-grey: #82878e;
     --email-grey: #a7acb2;
+    --green: #677115;
+    --red: #a8463f;
     --white: #ffffff;
     --black: #000000;
     --orange: #ed9266;
@@ -251,6 +250,21 @@ body.menu-locked {
     text-decoration: none;
     border-radius: 50px;
     transition: all .3s ease;
+}
+
+.watermark {
+    width: 100%;
+    color: var(--border);
+    font-family: var(--font-heading);
+    font-size: 13vw;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: -0.01em;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 40px 0;
+    user-select: none;
+    pointer-events: none;
 }
 
 @media (max-width: 1281px) {
