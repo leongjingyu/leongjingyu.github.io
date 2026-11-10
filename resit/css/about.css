@@ -37,7 +37,7 @@
 }
 
 .text {
-    font-size: 16px;
+    font-size: 15px;
     font-family: var(--font-text);
     line-height: 1.6;
     color: var(--text-grey);
@@ -489,6 +489,206 @@
 
     .gallery .short {
         margin-top: 52px;
+    }
+
+}
+
+@media (max-width: 766px) {
+    .about {
+        padding: 30px 13px 40px;
+        gap: 20px;
+    }
+
+    .title {
+        font-size: 30px;
+        max-width: 100%;
+    }
+
+    .title br,
+    .text br {
+        display: none;
+    }
+
+    .text {
+        max-width: 100%;
+        padding-top: 0;
+        align-self: flex-start;
+        font-size: 15px;
+    }
+
+    .about-img {
+        height: 350px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 40px;
+        padding: 60px 30px 0;
+    }
+
+    .number {
+        font-size: 40px;
+    }
+
+    .team {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px 25px;
+        padding: 20px 40px 40px;
+    }
+
+    .team-intro {
+        grid-column: 1 / -1;
+    }
+
+    .team-heading {
+        font-size: 13px;
+        margin: 0 0 8px;
+    }
+
+    .team-title {
+        font-size: 30px;
+        margin: 0 0 16px;
+    }
+
+    .team-title br,
+    .team-desc br {
+        display: none;
+    }
+
+    .team-desc {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+
+    .leader-name {
+        font-size: 17px;
+        margin: 20px 0 4px;
+    }
+
+    .leader-desc {
+        font-size: 15px;
+    }
+
+    .content-title {
+        font-size: 30px;
+        max-width: 100%;
+    }
+
+    .desc-title {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 30px 13px 0;
+    }
+
+    .desc-title h2 {
+        font-size: 30px;
+    }
+
+    .desc-text {
+        padding-top: 0;
+    }
+
+    .desc-text p {
+        font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 15px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px 25px;
+        padding: 40px 13px 60px;
+    }
+
+    .gallery .short {
+        margin-top: 0;
+    }
+
+    .gallery .short,
+    .gallery .tall {
+        aspect-ratio: 1 / 0.9;
+    }
+
+    .join {
+        padding: 40px 13px 50px;
+    }
+
+    .join h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .feature-container {
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 30px;
+    }
+
+    .feature img {
+        height: 90px;
+        margin-bottom: 15px;
+    }
+
+    .feature h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .feature p {
+        font-size: 15px;
+        max-width: 100%;
+    }
+
+    .content {
+        padding: 40px 12px 0;
+    }
+
+    .content-title {
+        font-size: 40px;
+    }
+
+    .review {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 30px 30px 0;
+    }
+
+    .review-card {
+        padding: 40px 25px 35px;
+    }
+
+    .stars {
+        margin-bottom: 30px;
+    }
+
+    .comment {
+        font-size: 16px;
+        margin: 0 0 30px;
+    }
+
+    .author img {
+        width: 64px;
+        height: 64px;
+    }
+
+    .name {
+        font-size: 16px;
+    }
+
+    .brand {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        height: auto;
+        margin-top: 60px;
+        border-bottom: none;
+    }
+
+    .brand-image {
+        height: 138px;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .brand-image:nth-child(even) {
+        border-right: none;
     }
 
 }

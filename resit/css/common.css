@@ -235,7 +235,7 @@ body.menu-locked {
     position: relative;
     height: 1px;
     background: var(--title);
-    margin: 170px 70px 0;
+    margin: 110px 70px 0;
 }
 
 .banner-button {
@@ -443,4 +443,7 @@ body.menu-locked {
         margin-bottom: 4px;
     }
 
+    .line {
+        margin: 60px 20px 0px;
+    }
 }
