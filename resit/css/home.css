@@ -273,13 +273,13 @@
     color: var(--title);
 }
 
-.banner {
+.create-memories-banner {
     position: relative;
     height: 560px;
     overflow: hidden;
 }
 
-.banner img {
+.create-memories-banner img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -316,16 +316,16 @@
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: .15em;
-    font-size: 14px;
+    font-size: 13px;
+    font-family: var(--font-heading);
     margin-bottom: 30px;
 }
 
 .adventure {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 240px;
-    padding: 150px 70px;
-    align-items: stretch;
+    gap: clamp(40px, 12vw, 240px);
+    padding: clamp(60px, 8vw, 150px) clamp(20px, 5vw, 70px);
 }
 
 .adventure-left {
@@ -442,6 +442,10 @@
     object-fit: cover;
 }
 
+.travel-col {
+    display: contents;
+}
+
 .travel-title {
     display: block;
     font-family: var(--font-heading);
@@ -468,4 +472,320 @@
     font-size: 14px;
     color: var(--email-grey);
     margin: 0;
+}
+
+.explore-banner {
+    width: 100%;
+}
+
+.explore-banner .banner-content {
+    position: relative;
+    height: 85vh;
+    overflow: hidden;
+}
+
+.explore-banner .banner-content img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.explore-banner .banner-card {
+    position: absolute;
+    top: 60px;
+    bottom: 60px;
+    right: 5%;
+    width: min(27vw, 520px);
+    height: auto;
+    padding: 4rem 3rem;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.explore-banner .banner-card h1 {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    font-size: 47px;
+    line-height: 1.05;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    color: var(--title);
+}
+
+.explore-banner .banner-card p {
+    margin-top: 2rem;
+    color: var(--text-grey);
+    font-weight: 300;
+    font-family: var(--font-text);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.explore-banner .banner-card a {
+    font-size: 12px;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--title);
+    font-family: var(--font-heading);
+}
+
+.big-text {
+    overflow: hidden;
+    background: var(--white);
+}
+
+.big-text-inner {
+    width: max-content;
+}
+
+.big-text-inner span {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 140px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: var(--title);
+}
+
+.review {
+    padding: 100px 20px;
+    background: var(--white);
+}
+
+.review-card {
+    max-width: 980px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.review .stars {
+    --star-size: 18px;
+    --star-color: var(--orange);
+    --star-empty: var(--text-grey);
+    display: inline-block;
+    font-size: var(--star-size);
+    letter-spacing: 3px;
+    line-height: 1;
+}
+
+.review .stars::before {
+    content: "★★★★★";
+    background: linear-gradient(90deg,
+            var(--star-color) calc(var(--rating) / 5 * 100%),
+            var(--star-empty) 0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.review .comment {
+    margin: 40px auto 60px;
+    font-family: var(--font-heading);
+    font-size: 23px;
+    line-height: 1.25;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    color: var(--title);
+}
+
+.review .author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.review .author img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review .name {
+    font-family: var(--font-heading);
+    font-size: 19px;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    color: var(--title);
+}
+
+.review .role {
+    margin-top: 6px;
+    font-family: var(--font-text);
+    font-size: 15px;
+    color: var(--text-grey);
+}
+
+.follow-us {
+    padding: 140px 7.5%;
+}
+
+.follow-us-title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: var(--font-heading);
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--title);
+}
+
+.follow-us-title a {
+    padding-bottom: 4px;
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 2px solid var(--orange);
+}
+
+.follow-us-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 37px;
+}
+
+.follow-us-grid img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 1190px) {
+    .travel-list {
+        display: flex;
+        gap: 37px;
+        padding: 0 20px;
+    }
+
+    .travel-col {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        min-width: 0;
+        gap: 40px;
+    }
+
+    .travel-card {
+        order: 0 !important;
+    }
+
+    .travel .eyebrow,
+    .travel h2 {
+        padding-left: 20px;
+    }
+
+    .travel h2 {
+        font-size: 44px;
+    }
+}
+
+
+@media (max-width: 920px) {
+
+    .heading {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        min-height: auto;
+        padding: 12px 2%;
+        overflow: hidden;
+    }
+
+    .heading h2 {
+        position: relative;
+        order: 1;
+        z-index: 2;
+        line-height: 0.95;
+        margin: 0;
+        font-weight: 400;
+    }
+
+    .heading-small {
+        font-size: 7vw;
+    }
+
+    .heading-big {
+        font-size: 10vw;
+        white-space: nowrap;
+        letter-spacing: -0.03em;
+    }
+
+    .arrow {
+        order: 2;
+        position: relative;
+        left: auto;
+        top: auto;
+        bottom: auto;
+        display: block;
+        width: 38px;
+        height: 48px;
+        margin-top: 35px;
+    }
+
+    .heading-desc {
+        order: 3;
+        position: relative;
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        max-width: 100%;
+        margin: 20px 0;
+        font-size: 14px;
+        letter-spacing: 0.12em;
+        line-height: 1.8;
+    }
+
+    .heading-button {
+        order: 4;
+        position: relative;
+        left: auto;
+        top: auto;
+        bottom: auto;
+        display: inline-block;
+        padding: 18px 45px;
+        margin-bottom: 50px;
+        font-size: 13px;
+        letter-spacing: 0.15em;
+    }
+
+    .big-image,
+    .small-image {
+        position: relative;
+        display: block;
+        left: auto;
+        top: auto;
+        bottom: auto;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .big-image {
+        order: 5;
+        margin-bottom: 25px;
+    }
+
+    .small-image {
+        order: 6;
+        margin-bottom: 20px;
+    }
+
+    .big-image img,
+    .small-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: auto;
+        object-fit: cover;
+    }
 }
