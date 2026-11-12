@@ -23,6 +23,18 @@
     white-space: nowrap;
 }
 
+.mountain {
+    position: absolute;
+    right: -6%;
+    left: auto;
+    top: 15vw;
+    width: 42%;
+    z-index: 0;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    user-select: none;
+}
+
 .big-image {
     position: absolute;
     left: 35%;
