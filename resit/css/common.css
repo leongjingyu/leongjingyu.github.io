@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Tenor+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap');
 
 :root {
     --font-heading: Tenor Sans, sans-serif;
@@ -11,11 +11,12 @@
     --title: #140503;
     --text-grey: #82878e;
     --email-grey: #a7acb2;
-    --green: #677115;
-    --red: #a8463f;
-    --white: #ffffff;
+    --text-white: #ffffff;
+    --background-white: #ffffff;
+    --button-orange: #ed9266;
+    --card-green: #677115;
+    --card-red: #a8463f;
     --black: #000000;
-    --orange: #ed9266;
     --border: #e7e7d9;
 
 }
@@ -106,7 +107,7 @@ body {
     right: 20px;
     background: none;
     border: none;
-    color: var(--white);
+    color: var(--text-white);
     font-size: 48px;
     line-height: 1;
     cursor: pointer;
@@ -234,14 +235,34 @@ body.menu-locked {
 .line {
     position: relative;
     height: 1px;
-    background: var(--title);
+    background: var(--text-grey);
     margin: 110px 70px 0;
 }
+
+.line::before,
+.line::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--text-grey);
+}
+
+.line::before {
+    left: 0;
+}
+
+.line::after {
+    right: 0;
+}
+
 
 .banner-button {
     display: inline-block;
     padding: 22px 55px;
-    background: var(--orange);
+    background: var(--button-orange);
     color: var(--background-cream);
     font-family: var(--font-heading);
     font-size: 13px;
@@ -313,7 +334,7 @@ body.menu-locked {
     }
 
     .menu-bar a {
-        color: var(--white);
+        color: var(--text-white);
         font-size: 23px;
     }
 
